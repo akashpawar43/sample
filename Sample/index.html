@@ -50,11 +50,13 @@
             .nav2 .posts .w-full {
                 width: 100% !important;
             }
-            .modal-dialogsm{
-                justify-content: end!important;
+
+            .modal-dialogsm {
+                justify-content: end !important;
             }
-            .s50-50{
-                width: 50%!important;
+
+            .s50-50 {
+                width: 50% !important;
             }
         }
     </style>
@@ -92,7 +94,8 @@
                 <div class="container hei-dis d-flex justify-content-end align-items-start flex-column space">
                     <div class="d-flex d-md-none justify-content-between" style="width: 100%;">
                         <img class="p-1" src="./images/arrow_back.png" alt="">
-                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#registerModal">Join Group</button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">Join Group</button>
                     </div>
                     <div>
                         <div class="fs-2 fw-bold" style="color: white;">Computer Engineering</div>
@@ -419,7 +422,7 @@
             </div>
     </section>
 
-    <section class="d-flex justify-content-end align-items-end position-sticky "
+    <section class="d-flex justify-content-end align-items-end position-sticky d-md-none"
         style="z-index: 999; bottom: 0; right: 0;padding: 1rem; height: 2rem;">
         <div style="height: 5rem;width: 5rem;">
             <img class="hei-dis" src="./images/Group6.png" alt="">
@@ -430,44 +433,61 @@
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialogsm"
             style="height: 100%;display: flex;justify-content: center;align-items: center;margin: 0 auto;flex-direction: column; max-width: 55rem;">
-            <div class="w-100 d-flex justify-content-end d-none d-lg-block" style="margin-bottom: 1rem;margin-left: 1rem; cursor: pointer;">
+            <div class="w-100 d-flex justify-content-end d-none d-lg-flex"
+                style="margin-bottom: 1rem;margin-left: 1rem; cursor: pointer;">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <img src="./images/cancel.png" alt="">
                 </button>
             </div>
             <div class="modal-content">
                 <div class="modal-header d-none d-lg-block" style="background: #EFFFF4;">
-                    <p class="modal-title text-success fw-medium px-3" style="" id="loginModalLabel">Let's learn, share & inspire each other
+                    <p class="modal-title text-success fw-medium px-3" style="" id="loginModalLabel">Let's learn, share
+                        & inspire each other
                         with our passion for computer engineering. Sign up now 🤘🏼</p>
                 </div>
                 <div class="d-flex flex-row">
                     <div class="modal-body w-50" style="padding: 2rem;">
                         <form id="loginForm">
                             <div class="mb-3">
-                                <label for="login-username" class="form-label fs-3 fw-bolder pb-2">Create Account</label>
+                                <div class="d-flex flex-row justify-content-between align-items-start">
+                                    <label for="login-username" class="form-label fs-3 fw-bolder pb-2">Create
+                                        Account</label>
+                                    <button type="button" class="border-0 bg-white d-md-none" data-bs-dismiss="modal">
+                                        <img src="./images/Group3.png" alt="">
+                                    </button>
+                                </div>
                                 <div class="d-flex flex-row">
                                     <input type="text w-50" class="form-control" id="username" placeholder="First Name">
                                     <input type="text w-50" class="form-control" id="username2" placeholder="Last Name">
                                 </div>
                                 <input type="email" class="form-control border" id="login-username" placeholder="Email">
                                 <input type="password" class="form-control" id="login-password" placeholder="Password">
-                                <input type="password" class="form-control" id="login-Cpassword" placeholder="Confirm Password">
+                                <input type="password" class="form-control" id="login-Cpassword"
+                                    placeholder="Confirm Password">
                             </div>
                             <div class="d-flex flex-row justify-content-between w-100 d-md-none">
-                                <button type="submit" class="btn btn-primary w-100 rounded-pill mb-4 s50-50">Create Account</button>
-                                <div class="d-flex w-50 " style="justify-content: end;align-items: baseline;display: flex;text-align: end;">
-                                    <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#loginModal" class="s50-50">or, Sign In</a>
+                                <button type="submit" class="btn btn-primary w-100 rounded-pill mb-4 s50-50">Create
+                                    Account</button>
+                                <div class="d-flex w-50 "
+                                    style="justify-content: end;align-items: baseline;display: flex;text-align: end;">
+                                    <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#loginModal" class="s50-50">or, Sign In</a>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 rounded-pill mb-4 s50-50 d-none d-lg-block ">Create Account</button>
+                            <button type="submit"
+                                class="btn btn-primary w-100 rounded-pill mb-4 s50-50 d-none d-lg-block ">Create
+                                Account</button>
                             <button type="submit" class="btn border w-100 mb-2">Sign in with Facebook</button>
                             <button type="submit" class="btn border w-100 mb-2">Sign in with Google</button>
                         </form>
                     </div>
                     <div class="p-3 w-50 d-flex flex-column d-none d-lg-flex">
-                        <p style="font-size: .9rem;">Don’t have an account yet?<a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#loginModal" class="text-decoration-none">Create new for free!</a></p>
-                        <img class="w-100"  src="./images/atg_illustration.png" alt="">
-                        <p style="font-size: 0.7rem;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                        <p style="font-size: .9rem;">Don’t have an account yet?<a href="#" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" data-bs-target="#loginModal" class="text-decoration-none">Create
+                                new for free!</a></p>
+                        <img class="w-100" src="./images/atg_illustration.png" alt="">
+                        <p style="font-size: 0.7rem;">By signing up, you agree to our Terms & conditions, Privacy policy
+                        </p>
                     </div>
                 </div>
             </div>
@@ -479,31 +499,42 @@
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialogsm"
             style="height: 100%;display: flex;justify-content: center;align-items: center;margin: 0 auto;flex-direction: column; max-width: 50rem;">
-            <div class="w-100 d-flex justify-content-end d-none d-lg-block" style="margin-bottom: 1rem;margin-left: 1rem; cursor: pointer;">
+            <div class="w-100 d-flex justify-content-end d-none d-lg-flex"
+                style="margin-bottom: 1rem;margin-left: 1rem; cursor: pointer;">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <img src="./images/cancel.png" alt="">
                 </button>
             </div>
             <div class="modal-content">
                 <div class="modal-header d-none d-lg-block " style="background: #EFFFF4;">
-                    <p class="modal-title text-success fw-medium px-3" style="" id="loginModalLabel">Let's learn, share & inspire each other
+                    <p class="modal-title text-success fw-medium px-3" style="" id="loginModalLabel">Let's learn, share
+                        & inspire each other
                         with our passion for computer engineering. Sign up now 🤘🏼</p>
                 </div>
                 <div class="d-flex flex-row">
                     <div class="modal-body" style="padding: 2rem;">
                         <form id="loginForm">
                             <div class="mb-3">
-                                <label for="login-username" class="form-label fs-3 fw-bolder pb-2">Sign In</label>
+                                <div class="d-flex flex-row justify-content-between align-items-start">
+                                    <label for="login-username" class="form-label fs-3 fw-bolder pb-2">Sign In</label>
+                                    <button type="button" class="border-0 bg-white d-md-none" data-bs-dismiss="modal">
+                                        <img src="./images/Group3.png" alt="">
+                                    </button>
+                                </div>
                                 <input type="email" class="form-control" id="login-username" placeholder="Email">
                                 <input type="password" class="form-control" id="login-password" placeholder="Password">
                             </div>
                             <div class="d-flex flex-row justify-content-between w-100 d-md-none">
-                                <button type="submit" class="btn btn-primary w-100 rounded-pill mb-4 s50-50">Login</button>
-                                <div class="d-flex w-50 " style="justify-content: end;align-items: baseline;display: flex;text-align: end;">
-                                    <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#registerModal" class="s50-50">or, Sign In</a>
+                                <button type="submit"
+                                    class="btn btn-primary w-100 rounded-pill mb-4 s50-50">Login</button>
+                                <div class="d-flex w-50 "
+                                    style="justify-content: end;align-items: baseline;display: flex;text-align: end;">
+                                    <a href="#" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#registerModal" class="s50-50">or, Sign In</a>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 rounded-pill mb-4 s50-50 d-none d-lg-block ">Login</button>
+                            <button type="submit"
+                                class="btn btn-primary w-100 rounded-pill mb-4 s50-50 d-none d-lg-block ">Login</button>
                             <button type="submit" class="btn border w-100 mb-2">Sign in with Facebook</button>
                             <button type="submit" class="btn border w-100 mb-2">Sign in with Google</button>
                             <div class="w-100 d-flex justify-content-center align-items-center">
@@ -514,7 +545,9 @@
                         </form>
                     </div>
                     <div class="p-3 d-none d-lg-block">
-                        <p>Don’t have an account yet?<a href="#" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#registerModal" class="text-decoration-none">Create new for free!</a></p>
+                        <p>Don’t have an account yet?<a href="#" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                data-bs-target="#registerModal" class="text-decoration-none">Create new for free!</a>
+                        </p>
                         <img class="hei-dis" src="./images/atg_illustration.png" alt="">
                     </div>
                 </div>
