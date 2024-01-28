@@ -7,6 +7,7 @@
 1. HTML5
 2. CSS3
 3. JavaScript
+3. Bootstrap
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://akashpawar43.netlify.app/)
@@ -19,7 +20,7 @@
 
 1. HomePage
 
-<img src="https://github.com/akashpawar43/sample/blob/master/public/localhost_3000_.png" alt="project-screenshot" >
+<img src="https://github.com/akashpawar43/sample/blob/master/images/website.png" alt="project-screenshot" >
 
 
 
